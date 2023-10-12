@@ -1,3 +1,5 @@
+# Main function / Written by Mengna Deng
+
 import database
 import game_logic
 

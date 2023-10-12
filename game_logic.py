@@ -35,6 +35,8 @@ def play_game():
         # Press enter to pre_exit the game anytime
         if guess == "":
             intend_exit = input(f"Do you want to exit the game? (yes/no)").lower()
+
+            # Press Enter or type any other word except "no" to exit the game
             if intend_exit != "no":
                 print(f"Sorry to see you go, {player_name}")
                 break
@@ -50,7 +52,7 @@ def play_game():
     if len(collected_diamonds) == len(diamonds):
         print(f"Congratulations, {player_name}! You've collected all seven diamonds in {attempts} attempts.")
 
-    elif attempts > 9:
+    elif attempts >= 9:
         print(f"Sorry, {player_name}. You've reached the maximum attempts. Try again later")
 
 
